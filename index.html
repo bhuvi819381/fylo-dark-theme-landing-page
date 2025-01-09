@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>
+      Frontend Mentor | Fylo landing page with dark theme and features grid
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "Intro-bg": "hsl(217, 28%, 15%)",
+              "Main-bg": "hsl(218, 28%, 13%)",
+              "Footer-bg": "hsl(216, 53%, 9%)",
+              "Testimonials-bg": "hsl(219, 30%, 18%)",
+              "Cyan-gradient": "hsl(176, 68%, 64%)",
+              "Blue-gradient": "hsl(198, 60%, 50%)",
+              "Error-red": "hsl(0, 100%, 63%)",
+              White: "hsl(0, 0%, 100%)",
+            },
+            fontFamily: {
+              Raleway: ["Raleway", "sans-serif"],
+              OpenSans: ["Open Sans", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      section:first-of-type {
+        background-image: url("./images/bg-curvy-desktop.svg");
+        background-position: bottom center;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body class="w-full max-w-[1440px] h-full text-White m-auto">
+    <header
+      class="w-full mx-auto flex justify-between items-center bg-Testimonials-bg py-[4.6rem] px-[5rem] font-Raleway font-normal"
+    >
+      <img src="./images/logo.svg" alt="Fylo Logo" />
+      <nav class="">
+        <ul class="flex justify-center items-center gap-[3.6rem]">
+          <li class="hover:underline">
+            <a href="#">Features</a>
+          </li>
+          <li class="hover:underline">
+            <a href="#">Team</a>
+          </li>
+          <li class="hover:underline">
+            <a href="#">Sign In</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="w-full h-full bg-Main-bg">
+
+      <!-- First Section STart -->
+      <section class="text-center flex flex-col justify-center items-center font-Raleway bg-Testimonials-bg pb-[10rem]">
+        <img src="./images/illustration-intro.png" alt="illustration-intro">
+        <h1 class="text-[2.5rem] font-bold max-w-[50rem] mt-[2.19rem]">All your files in one secure location, accessible anywhere.</h1>
+        <p class="text-[1.29rem] max-w-[37.5rem] mt-[2.1rem] leading-[1.97rem] tracking-[0.01rem]">Fylo stores your most important files in one secure location. Access them wherever you need, share and collaborate with friends, family, and co-workers.</p>
+        <button class="px-[6rem] py-[1rem] bg-Cyan-gradient text-White rounded-full font-bold hover:opacity-80 mt-[1.8rem]">Get Started</button>
+      </section>
+      <!-- First Section End Here -->
+
+      <!-- Second Section Start -->
+      <section class="max-w-[55rem] mx-auto font-Raleway bg-Main-bg text-center my-2">
+
+        <!-- First And Second Card Container -->
+        <div class="w-full flex gap-[7rem]">
+
+          <!-- First Card -->
+          <div class="w-1/2 flex flex-col items-center pr-[2.2rem]">
+            <img class="mt-[.1rem]" src="./images/icon-access-anywhere.svg" alt="icon-access-anywhere">
+            <h2 class="font-bold text-xl mt-[1.8rem]">Access your files, anywhere</h2>
+            <p class="mt-[0.3rem] text-[0.9rem]">The ability to use a smartphone, tablet, or computer to access your account means your files follow you everywhere.</p>
+          </div>
+
+          <!-- Second Card -->
+          <div class="w-1/2 flex flex-col justify-center items-center">
+            <img class="" src="./images/icon-security.svg" alt="icon-security">
+            <h2 class="font-bold text-xl mt-[1.1rem]">Security you can trust</h2>
+            <p class="mt-[0.3rem] text-[0.9rem]">2-factor authentication and user-controlled encryption are just a couple of the security features we allow to help secure your files.</p>
+          </div>
+        </div>
+
+        <!-- Third And Forth Card Container -->
+        <div class="w-full flex gap-[5rem] mt-[5.5rem]">
+
+          <!-- Third Card -->
+          <div class="w-1/2 flex flex-col items-center mr-[2rem]">
+            <img class="mt-[0.3rem]" src="./images/icon-collaboration.svg" alt="icon-collaboration">
+            <h2 class="font-bold text-xl mt-[1.8rem]">Real-time collaboration</h2>
+            <p class="mt-[0.3rem] text-[0.9rem]">Securely share files and folders with friends, family and colleagues for live collaboration. 
+              No email attachments required.</p>
+          </div>
+
+          <!-- Fourth Card -->
+          <div class="w-1/2 flex flex-col items-center ml-[4rem]">
+            <img class="mt-[0.3rem]" src="./images/icon-any-file.svg" alt="icon-any-file">
+            <h2 class="font-bold text-xl mt-[2.3rem]">Store any type of file</h2>
+            <p class="mt-[0.3rem] text-[0.9rem]">Whether you're sharing holiday photos or work documents, Fylo has you covered allowing for all file types to be securely stored and shared.</p>
+          </div>
+        </div>
+      </section>
+      <!-- Second Section End Here -->
+
+      <!-- Third Section Start -->
+      <section class=" w-full mx-auto flex justify-center items-center mt-[8.5rem] px-[6.6rem] bg-slate-500">
+        <div class="w-1/2 border border-red-600">
+          <img src="./images/illustration-stay-productive.png" alt="illustration-stay-productive">
+
+        </div>
+        <div class="w-1/2 border border-red-600 pl-[3.3rem]">
+          <h3 class="w-[25rem] text-[2.55rem] font-semibold font-Raleway leading-[3rem]">Stay productive, wherever you are</h3>
+          <p class="text-[1.1rem] mt-[3rem]">Never let location be an issue when accessing your files. Fylo has you covered for all of your file 
+            storage needs.</p>
+            <p>Securely share files and folders with friends, family and colleagues for live collaboration. No email 
+              attachments required.</p>
+
+              <a href="#" target="_blank" rel="noopener noreferrer">See how Fylo works <span>
+                <img src="./images/icon-arrow.svg" alt="icon-arrow">
+              </span></a>
+        </div>
+      </section>
+      <!-- Third Section End Here -->
+
+      <!-- Forth Section Start -->
+
+
+
+    </main>
+    <!-- <footer>
+      <div class="logo">
+        <img src="./images/logo.svg" alt="Fylo" />
+      </div>
+      <div class="grid"></div>
+    </footer> -->
+  </body>
+</html>
