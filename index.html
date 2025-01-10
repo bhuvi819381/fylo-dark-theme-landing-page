@@ -21,6 +21,7 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:wght@100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -70,18 +71,55 @@
         z-index: 1;
       }
 
+      section:nth-child(5) {
+        background-image: linear-gradient(
+          hsl(218, 28%, 13%) 60%,
+          hsl(216, 53%, 9%) 40%
+        );
+      }
+
+      input[type="email"] {
+        color: black;
+      }
+
+      input[type="email"]:invalid {
+  border-color: red;
+  
+}
+
+/* Style for valid input */
+input[type="email"]:valid {
+  border-color: green;
+}
+
+/* Error message styling */
+.error-message {
+  display: block;
+  opacity: 0;
+  color: red;
+  font-size: 14px;
+}
+
+/* Show error message when input is invalid */
+input[type="email"]:invalid + .error-message {
+  display: block;
+  opacity: 1;
+}
+
       .attribution {
         font-size: 11px;
         text-align: center;
       }
+
       .attribution a {
         color: hsl(228, 45%, 44%);
       }
     </style>
   </head>
-  <body class="w-full max-w-[1440px] h-full text-White m-auto">
+
+  <body class="max-w-[1440px] h-full text-White m-auto p-[1rem]">
     <header
-      class="w-full mx-auto flex justify-between items-center bg-Testimonials-bg py-[4.6rem] px-[5rem] font-Raleway font-normal"
+      class="w-full mx-auto flex justify-between items-center bg-Testimonials-bg py-[4.6rem] lg:px-[5rem] font-Raleway font-normal"
     >
       <img src="./images/logo.svg" alt="Fylo Logo" />
       <nav class="">
@@ -239,21 +277,16 @@
       <section
         class="w-[82%] h-[15rem] mx-auto mt-[8.9rem] flex gap-x-[2.6rem]"
       >
-
         <!-- First Figure Card Start Here -->
-        <figure
-          class="w-[76rem] mt-[2rem] z-10 bg-Testimonials-bg ml-[0.6rem] rounded-lg pt-10 px-6"
-        >
+        <figure class="w-[76rem] mt-[2rem] z-10 bg-Testimonials-bg ml-[0.6rem] rounded-lg pt-10 px-6">
           <blockquote>
-          <p class="text-[1rem] text-balanced leading-[1.4rem]">
-            Fylo has improved our team productivity by an order of magnitude.
-            Since making the switch our team has become a well-oiled
-            collaboration machine.
-          </p>
+            <p class="text-[1rem] text-balanced leading-[1.4rem]">
+              Fylo has improved our team productivity by an order of magnitude.
+              Since making the switch our team has become a well-oiled
+              collaboration machine.
+            </p>
           </blockquote>
-          <figcaption
-            class="mt-2 flex items-center space-x-4 text-left"
-          >
+          <figcaption class="mt-2 flex items-center space-x-4 text-left">
             <img
               src="./images/profile-1.jpg"
               alt="profile-1"
@@ -262,12 +295,8 @@
               decoding="async"
             />
             <div class="mt-3">
-              <h4 class="text-xs font-semibold ">
-                Bruce McKenzie
-              </h4>
-              <p class=" text-xs ">
-                Founder & CEO, Huddle
-              </p>
+              <h4 class="text-xs font-semibold">Bruce McKenzie</h4>
+              <p class="text-xs">Founder & CEO, Huddle</p>
             </div>
           </figcaption>
         </figure>
@@ -276,14 +305,12 @@
         <figure class="w-[76rem] mt-[2rem] z-10 bg-Testimonials-bg ml-[0.6rem] rounded-lg pt-10 px-6"">
           <blockquote>
             <p class="text-[1rem] text-balanced leading-[1.4rem]">
-              Fylo has improved our team productivity by an order of magnitude.
-              Since making the switch our team has become a well-oiled
-              collaboration machine.
+            Fylo has improved our team productivity by an order of magnitude.
+            Since making the switch our team has become a well-oiled
+            collaboration machine.
             </p>
           </blockquote>
-          <figcaption
-            class="mt-2 flex items-center space-x-4 text-left"
-          >
+          <figcaption class="mt-2 flex items-center space-x-4 text-left">
             <img
               src="./images/profile-2.jpg"
               alt="profile-2"
@@ -292,18 +319,16 @@
               decoding="async"
             />
             <div class="mt-3">
-              <h4 class=" font-semibold text-xs">
-                Bruce McKenzie
-              </h4>
-              <p class=" text-sm ">
-                Founder & CEO, Huddle
-              </p>
+              <h4 class="font-semibold text-xs">Bruce McKenzie</h4>
+              <p class="text-sm">Founder & CEO, Huddle</p>
             </div>
           </figcaption>
         </figure>
 
         <!-- Third Figure Card Start Here -->
-        <figure class="w-[76rem] mt-[2rem] z-10 bg-Testimonials-bg ml-[0.6rem] rounded-lg pt-10 px-6 ">
+        <figure
+          class="w-[76rem] mt-[2rem] z-10 bg-Testimonials-bg ml-[0.6rem] rounded-lg pt-10 px-6"
+        >
           <blockquote>
             <p class="text-[1rem] text-balanced leading-[1.4rem]">
               Fylo has improved our team productivity by an order of magnitude.
@@ -311,33 +336,122 @@
               collaboration machine.
             </p>
           </blockquote>
-          <figcaption
-            class="mt-2 flex items-center space-x-4 text-left"
-          >
+          <figcaption class="mt-2 flex items-center space-x-4 text-left">
             <img
               src="./images/profile-3.jpg"
               alt="profile-3"
-              class=" w-6 h-6 rounded-full"
+              class="w-6 h-6 rounded-full"
               loading="lazy"
               decoding="async"
             />
             <div class="mt-3">
-              <h4 class="text-xs font-semibold">
-                Bruce McKenzie
-              </h4>
-              <p class=" text-xs ">
-                Founder & CEO, Huddle
-              </p>
+              <h4 class="text-xs font-semibold">Bruce McKenzie</h4>
+              <p class="text-xs">Founder & CEO, Huddle</p>
             </div>
           </figcaption>
         </figure>
       </section>
+      <!-- Forth Section End Here -->
+
+      <!-- Fifth Section Start -->
+      <section class="w-full mx-auto mt-[12.2rem] text-center">
+        <div
+          class="w-[60%] mx-auto bg-Testimonials-bg rounded-lg py-10 px-[5.2rem] shadow-xl"
+        >
+          <h5 class="text-[2.2rem] font-semibold">Get early access today</h5>
+          <p class="mt-4 text-pretty">
+            It only takes a minute to sign up and our free starter tier is
+            extremely generous. If you have any questions, our support team
+            would be happy to help you.
+          </p>
+          <div class="flex justify-center gap-3 mt-7">
+            <div>
+
+            
+
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter your email"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}" 
+                title="Please enter a valid email address"
+                class="px-7 py-3 rounded-full flex-1"
+              />
+              
+              <span class="error-message">Please enter a valid email address.</span>
+              </div>
+            
+            <button
+              type="submit"
+              class="w-[15rem] h-[3rem] bg-Cyan-gradient text-white rounded-full font-bold hover:opacity-80"
+            >
+              Get Started For Free
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- Fifth Section End Here -->
     </main>
-    <!-- <footer>
+
+    <!-- Footer Start Here -->
+    <footer class="w-full  bg-Footer-bg py-[5.5rem] px-[7.5rem]">
       <div class="logo">
         <img src="./images/logo.svg" alt="Fylo" />
       </div>
+      <div class="grid grid-cols-5 mt-8 opacity-[0.5]" >
+        <div class="flex justify-center items-center gap-3 ">
+          <img class="self-start" src="./images/icon-location.svg" alt="icon-location">
+          <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
+            dolore magna aliqua</p>
+        </div>
+        <div class="flex items-center gap-5 flex-col">
+          <div class="flex justify-center items-center gap-5">
+            <img src="./images/icon-phone.svg" alt="icon-phone">
+            <p>+1-543-123-4567</p>
+          </div>
+          <div class="flex justify-center items-center gap-5">
+            <img src="./images/icon-email.svg" alt="icon-email">
+            <p>example@fylo.com</p>
+          </div>
+        </div>
+        <div>
+          <ul class="flex justify-center items-center gap-5 flex-col">
+            <li>About Us</li>
+            <li>Jobs</li>
+            <li>Press</li>
+            <li>Blog</li>
+          </ul>
+        </div>
+        <div>
+          <ul class="flex justify-center items-center gap-5 flex-col">
+            <li>Contact Us</li>
+            <li>Terms</li>
+            <li>Privacy</li>
+          </ul>
+        </div>
+        <div>
+          <ul class="flex justify-center gap-8">
+            <li class="rounded-full border border-white w-8 h-8 flex justify-center items-center hover:border hover:border-Cyan-gradient hover:opacity-100 hover:fill-Cyan-gradient">
+              <a href="#" >
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+            </li>
+            <li class="rounded-full border border-white w-8 h-8 flex justify-center items-center hover:border hover:border-Cyan-gradient hover:opacity-100 hover:fill-Cyan-gradient">
+              <a href="#">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+            </li>
+            <li class="rounded-full border border-white w-8 h-8 flex justify-center items-center hover:border hover:border-Cyan-gradient hover:opacity-100 hover:fill-Cyan-gradient">
+              <a href="#">
+                
+                <i class="fa-brands fa-instagram hover:fill-Cyan-gradient"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
       <div class="grid"></div>
-    </footer> -->
+    </footer>
   </body>
 </html>
