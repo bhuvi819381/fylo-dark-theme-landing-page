@@ -117,13 +117,13 @@ input[type="email"]:invalid + .error-message {
     </style>
   </head>
 
-  <body class="max-w-[1440px] h-full text-White m-auto p-[1rem]">
+  <body class="w-full max-w-[1440px] h-full text-White m-auto">
     <header
-      class="w-full mx-auto flex justify-between items-center bg-Testimonials-bg py-[4.6rem] lg:px-[5rem] font-Raleway font-normal"
+      class="w-full mx-auto flex justify-between items-center bg-Testimonials-bg py-[1.5rem] lg:py-[4.6rem] px-[2rem] lg:px-[5rem] font-Raleway font-normal" role="banner"
     >
-      <img src="./images/logo.svg" alt="Fylo Logo" />
+      <img class="w-[5rem] lg:w-[11rem]" src="./images/logo.svg" alt="Fylo Logo" />
       <nav class="">
-        <ul class="flex justify-center items-center gap-[3.6rem]">
+        <ul class="flex justify-center items-center gap-[2rem] lg:gap-[3.6rem]">
           <li class="hover:underline">
             <a href="#">Features</a>
           </li>
@@ -136,13 +136,13 @@ input[type="email"]:invalid + .error-message {
         </ul>
       </nav>
     </header>
-    <main class="w-full h-full bg-Main-bg">
+    <main class="w-full h-full bg-Main-bg " role="main">
       <!-- First Section STart -->
       <section
-        class="text-center flex flex-col justify-center items-center font-Raleway bg-Testimonials-bg pb-[10rem]"
+        class="text-center flex flex-col justify-center items-center font-Raleway bg-Testimonials-bg pb-[10rem] px-[1rem] lg:px-0"
       >
         <img src="./images/illustration-intro.png" alt="illustration-intro" />
-        <h1 class="text-[2.5rem] font-bold max-w-[50rem] mt-[2.19rem]">
+        <h1 class="text-[2rem] lg:text-[2.5rem] font-bold max-w-[50rem] mt-[2.19rem]">
           All your files in one secure location, accessible anywhere.
         </h1>
         <p
@@ -162,12 +162,12 @@ input[type="email"]:invalid + .error-message {
 
       <!-- Second Section Start -->
       <section
-        class="max-w-[55rem] mx-auto font-Raleway bg-Main-bg text-center my-2"
+        class="max-w-[55rem] mx-auto font-Raleway bg-Main-bg text-center my-2 px-[1rem] lg:px-0"
       >
         <!-- First And Second Card Container -->
-        <div class="w-full flex gap-[7rem]">
+        <div class="w-full flex gap-[7rem] flex-col lg:flex-row">
           <!-- First Card -->
-          <div class="w-1/2 flex flex-col items-center pr-[2.2rem]">
+          <div class="w-full lg:w-1/2 flex flex-col items-center pr-[2.2rem]">
             <img
               class="mt-[.1rem]"
               src="./images/icon-access-anywhere.svg"
@@ -183,7 +183,7 @@ input[type="email"]:invalid + .error-message {
           </div>
 
           <!-- Second Card -->
-          <div class="w-1/2 flex flex-col justify-center items-center">
+          <div class="w-full lg:w-1/2 flex flex-col justify-center items-center">
             <img
               class=""
               src="./images/icon-security.svg"
@@ -201,9 +201,9 @@ input[type="email"]:invalid + .error-message {
         </div>
 
         <!-- Third And Forth Card Container -->
-        <div class="w-full flex gap-[5rem] mt-[5.5rem]">
+        <div class="w-full flex flex-col lg:flex-row gap-[5rem] mt-[5.5rem]">
           <!-- Third Card -->
-          <div class="w-1/2 flex flex-col items-center mr-[2rem]">
+          <div class="w-full lg:w-1/2 flex flex-col items-center mr-[2rem]">
             <img
               class="mt-[0.3rem]"
               src="./images/icon-collaboration.svg"
@@ -219,7 +219,7 @@ input[type="email"]:invalid + .error-message {
           </div>
 
           <!-- Fourth Card -->
-          <div class="w-1/2 flex flex-col items-center ml-[4rem]">
+          <div class="w-full lg:w-1/2 flex flex-col items-center lg:ml-[4rem]">
             <img
               class="mt-[0.3rem]"
               src="./images/icon-any-file.svg"
@@ -239,16 +239,16 @@ input[type="email"]:invalid + .error-message {
       <!-- Second Section End Here -->
 
       <!-- Third Section Start -->
-      <section class="w-full mx-auto flex mt-[8.5rem] px-[6.6rem]">
-        <div class="w-1/2">
+      <section class="w-full mx-auto flex flex-col lg:flex-row mt-[8.5rem] px-[2rem] lg:px-[6.6rem]">
+        <div class="w-full lg:w-1/2">
           <img
             src="./images/illustration-stay-productive.png"
             alt="illustration-stay-productive"
           />
         </div>
-        <div class="w-1/2 pl-[3.4rem]">
+        <div class="w-full lg:w-1/2 lg:pl-[3.4rem]">
           <h3
-            class="w-[25rem] text-[2.55rem] font-semibold font-Raleway leading-[3rem] mt-[7.2rem]"
+            class="w-full lg:w-[25rem] text-[1.5rem] lg:text-[2.55rem] font-semibold font-Raleway leading-[3rem] mt-[7.2rem]"
           >
             Stay productive, wherever you are
           </h3>
@@ -262,7 +262,7 @@ input[type="email"]:invalid + .error-message {
           </p>
 
           <a
-            class="flex items-center text-[1.1rem] gap-1 underline underline underline-offset-[8px] text-Cyan-gradient mt-[1.45rem]"
+            class="flex items-center text-[1.1rem] gap-1 underline underline-offset-[8px] text-Cyan-gradient mt-[1.45rem]"
             href="#"
             target="_blank"
             rel="noopener noreferrer"
@@ -275,12 +275,12 @@ input[type="email"]:invalid + .error-message {
 
       <!-- Forth Section Start -->
       <section
-        class="w-[82%] h-[15rem] mx-auto mt-[8.9rem] flex gap-x-[2.6rem]"
+        class="w-full lg:w-[82%] h-full lg:h-[15rem] mx-auto mt-[8.9rem] flex flex-col lg:flex-row gap-x-[2.6rem] px-[2rem] lg:px-0"
       >
         <!-- First Figure Card Start Here -->
-        <figure class="w-[76rem] mt-[2rem] z-10 bg-Testimonials-bg ml-[0.6rem] rounded-lg pt-10 px-6">
+        <figure class="w-full lg:w-[76rem] mt-[2rem] z-10 bg-Testimonials-bg lg:ml-[0.6rem] rounded-lg py-10 px-6">
           <blockquote>
-            <p class="text-[1rem] text-balanced leading-[1.4rem]">
+            <p class="text-[1rem] text-wrap lg:text-balanced leading-[1.4rem]">
               Fylo has improved our team productivity by an order of magnitude.
               Since making the switch our team has become a well-oiled
               collaboration machine.
@@ -302,7 +302,7 @@ input[type="email"]:invalid + .error-message {
         </figure>
 
         <!-- Second Figure Card Start Here -->
-        <figure class="w-[76rem] mt-[2rem] z-10 bg-Testimonials-bg ml-[0.6rem] rounded-lg pt-10 px-6"">
+        <figure class=" w-full lg:w-[76rem] mt-[2rem] z-10 bg-Testimonials-bg lg:ml-[0.6rem] rounded-lg py-10 px-6"">
           <blockquote>
             <p class="text-[1rem] text-balanced leading-[1.4rem]">
             Fylo has improved our team productivity by an order of magnitude.
@@ -327,7 +327,7 @@ input[type="email"]:invalid + .error-message {
 
         <!-- Third Figure Card Start Here -->
         <figure
-          class="w-[76rem] mt-[2rem] z-10 bg-Testimonials-bg ml-[0.6rem] rounded-lg pt-10 px-6"
+          class="w-full lg:w-[76rem] mt-[2rem] z-10 bg-Testimonials-bg lg:ml-[0.6rem] rounded-lg py-10 px-6"
         >
           <blockquote>
             <p class="text-[1rem] text-balanced leading-[1.4rem]">
@@ -354,17 +354,17 @@ input[type="email"]:invalid + .error-message {
       <!-- Forth Section End Here -->
 
       <!-- Fifth Section Start -->
-      <section class="w-full mx-auto mt-[12.2rem] text-center">
+      <section class="w-full mx-auto mt-[12.2rem] text-center px-[2rem] lg:px-0">
         <div
-          class="w-[60%] mx-auto bg-Testimonials-bg rounded-lg py-10 px-[5.2rem] shadow-xl"
+          class="lg:w-[60%] mx-auto bg-Testimonials-bg rounded-lg py-10 px-[2rem] lg:px-[5.2rem] shadow-xl"
         >
-          <h5 class="text-[2.2rem] font-semibold">Get early access today</h5>
+          <h5 class="text-[1.5rem] lg:text-[2.2rem] font-semibold">Get early access today</h5>
           <p class="mt-4 text-pretty">
             It only takes a minute to sign up and our free starter tier is
             extremely generous. If you have any questions, our support team
             would be happy to help you.
           </p>
-          <div class="flex justify-center gap-3 mt-7">
+          <div class="flex justify-center items-center lg:items-start flex-col lg:flex-row lg:gap-3 mt-7">
             <div>
 
             
@@ -376,7 +376,8 @@ input[type="email"]:invalid + .error-message {
                 placeholder="Enter your email"
                 pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}" 
                 title="Please enter a valid email address"
-                class="px-7 py-3 rounded-full flex-1"
+                class="px-7 py-3 rounded-full lg:flex-1"
+                aria-label="email"
               />
               
               <span class="error-message">Please enter a valid email address.</span>
@@ -395,54 +396,54 @@ input[type="email"]:invalid + .error-message {
     </main>
 
     <!-- Footer Start Here -->
-    <footer class="w-full  bg-Footer-bg py-[5.5rem] px-[7.5rem]">
+    <footer class="w-full  bg-Footer-bg py-[5.5rem] px-[2rem] lg:px-[7.5rem]" role="contentinfo">
       <div class="logo">
         <img src="./images/logo.svg" alt="Fylo" />
       </div>
-      <div class="grid grid-cols-5 mt-8 opacity-[0.5]" >
-        <div class="flex justify-center items-center gap-3 ">
+      <div class="grid grid-cols-1 lg:grid-cols-5 mt-8 " >
+        <div class="flex justify-center gap-3 ">
           <img class="self-start" src="./images/icon-location.svg" alt="icon-location">
-          <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
+          <p class="opacity-[0.5]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
             dolore magna aliqua</p>
         </div>
-        <div class="flex items-center gap-5 flex-col">
-          <div class="flex justify-center items-center gap-5">
+        <div class="flex items-center gap-5 flex-col mt-8 lg:mt-0">
+          <div class="flex justify-center items-center gap-5 opacity-[0.5] hover:opacity-100 cursor-pointer">
             <img src="./images/icon-phone.svg" alt="icon-phone">
             <p>+1-543-123-4567</p>
           </div>
-          <div class="flex justify-center items-center gap-5">
+          <div class="flex justify-center items-center gap-5 opacity-[0.5] hover:opacity-100 cursor-pointer">
             <img src="./images/icon-email.svg" alt="icon-email">
             <p>example@fylo.com</p>
           </div>
         </div>
         <div>
-          <ul class="flex justify-center items-center gap-5 flex-col">
-            <li>About Us</li>
-            <li>Jobs</li>
-            <li>Press</li>
-            <li>Blog</li>
+          <ul class="flex justify-center items-center gap-5 flex-row lg:flex-col mt-8 lg:mt-0">
+            <li class="hover:opacity-100 cursor-pointer opacity-[0.5]">About Us</li>
+            <li class="hover:opacity-100 cursor-pointer opacity-[0.5]">Jobs</li>
+            <li class="hover:opacity-100 cursor-pointer opacity-[0.5]">Press</li>
+            <li class="hover:opacity-100 cursor-pointer opacity-[0.5]">Blog</li>
           </ul>
         </div>
         <div>
-          <ul class="flex justify-center items-center gap-5 flex-col">
-            <li>Contact Us</li>
-            <li>Terms</li>
-            <li>Privacy</li>
+          <ul class="flex justify-center items-center gap-5 flex-row lg:flex-col mt-8 lg:mt-0">
+            <li class="hover:opacity-100 cursor-pointer opacity-[0.5]">Contact Us</li>
+            <li class="hover:opacity-100 cursor-pointer opacity-[0.5]">Terms</li>
+            <li class="hover:opacity-100 cursor-pointer opacity-[0.5]">Privacy</li>
           </ul>
         </div>
-        <div>
+        <div class="mt-8 lg:mt-0">
           <ul class="flex justify-center gap-8">
-            <li class="rounded-full border border-white w-8 h-8 flex justify-center items-center hover:border hover:border-Cyan-gradient hover:opacity-100 hover:fill-Cyan-gradient">
+            <li class="rounded-full border border-white w-8 h-8 flex justify-center items-center hover:border hover:border-Cyan-gradient opacity-[0.5] hover:opacity-100 hover:fill-Cyan-gradient">
               <a href="#" >
                 <i class="fa-brands fa-facebook-f"></i>
               </a>
             </li>
-            <li class="rounded-full border border-white w-8 h-8 flex justify-center items-center hover:border hover:border-Cyan-gradient hover:opacity-100 hover:fill-Cyan-gradient">
+            <li class="rounded-full border border-white w-8 h-8 flex justify-center items-center hover:border hover:border-Cyan-gradient opacity-[0.5] hover:opacity-100 hover:fill-Cyan-gradient">
               <a href="#">
                 <i class="fa-brands fa-twitter"></i>
               </a>
             </li>
-            <li class="rounded-full border border-white w-8 h-8 flex justify-center items-center hover:border hover:border-Cyan-gradient hover:opacity-100 hover:fill-Cyan-gradient">
+            <li class="rounded-full border border-white w-8 h-8 flex justify-center items-center hover:border hover:border-Cyan-gradient opacity-[0.5] hover:opacity-100 hover:fill-Cyan-gradient">
               <a href="#">
                 
                 <i class="fa-brands fa-instagram hover:fill-Cyan-gradient"></i>
